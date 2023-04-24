@@ -1,0 +1,58 @@
+{% extends "paginas/base.html" %}
+
+{% block titulo %} Lista de mapas {% endblock %}
+
+{% block Contenido %} 
+
+<nav class="navbar is-transparent">
+      <div class="navbar-burger" data-target="navbarExampleTransparentExample">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  
+    <div class="card">
+        <div class="card-header">
+            <a name="" id="" class="btn btn-success" href="{% url 'subir' %}" role="button"> Solicitar nuevo mapa </a>
+        </div>
+        <div class="card-body">
+            <h4 class="card-title">Mapas solicitados</h4>
+            <div class="table-responsive">
+                <table class="table table-white">
+                    <thead>
+                        <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">Tipo de mapa</th>
+                            <th scope="col">Imagen ilustrativa</th>
+                            <th scope="col">Descripción</th>
+                        </tr>
+                    </thead>
+                    <tbody>   
+                        {%for Mapa in mapas%}     
+                        <tr class="">
+                            <td scope="row">{{Mapa.id}}</td>
+                            <td>{{Mapa.titulo}}</td>
+                            <td>
+                                <img src="{{Mapa.imagen.url}}" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="">
+                            </td>
+                            <td>{{Mapa.descripcion}}</td>
+                            <td> <a name="" id="" class="btn btn-info" href="{% url 'editar' Mapa.id %}" role="button">Editar</a>
+                                <a name="" id="" class="btn btn-danger" href="{% url 'eliminar' Mapa.id %}" role="button">Eliminar</a></td>
+                        </tr>
+                        {% endfor %}  
+                    </tbody>
+                </table>
+            </div>
+            
+        </div>
+        <div class="card-footer text-muted">
+           
+        </div>
+    </div>
+    
+    </div>
+  </nav>
+
+{% endblock %}
+

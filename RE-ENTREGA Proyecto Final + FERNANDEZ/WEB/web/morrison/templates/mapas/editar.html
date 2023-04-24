@@ -1,0 +1,18 @@
+{% extends "paginas/base.html" %}
+
+{% block titulo %} Editar pedido {% endblock %}
+
+{% block Contenido %} 
+
+<div class="card">
+    <div class="card-header">
+        Editar pedido
+    </div>
+    <div class="card-body">
+        <h4 class="card-title">Datos del mapa</h4>
+        {% include 'mapas/form.html' %}       
+   
+    </div>
+</div>
+
+{% endblock %}

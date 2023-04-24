@@ -1,0 +1,38 @@
+{% extends "paginas/base.html" %}
+
+{% block titulo %} Inicio {% endblock %}
+
+{% block Contenido %} 
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Morrison Maps</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  </head>
+  <body>
+    <h3>Regístrese<h3>
+        <br>
+    
+        <form action="/signin" method="POST">
+        {% csrf_token %}
+            <label for="">Usuario</label>
+            <input type="text" id ="username" name="username" placeholder="Ingrese su usuario" Required>
+            <br>
+            <br>
+
+            <label for="">Contraseña</label>
+            <input type="password" id ="pass1" name="pass1" placeholder="Ingrese su contraseña" Required>
+            <br>
+            <br>
+
+            
+            <button type="submit">Confirmar</button>
+
+
+        </form>
+  </body>
+
+</html>
+
+{% endblock %}

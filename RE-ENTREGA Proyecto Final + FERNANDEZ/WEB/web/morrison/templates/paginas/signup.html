@@ -1,0 +1,58 @@
+
+{% extends "paginas/inicio.html" %}
+
+{% block titulo %} Inicio {% endblock %}
+
+{% block Contenido %} 
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Morrison Maps</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  </head>
+  <body>
+    <h3>Regístrese<h3>
+        <br>
+    
+        <form action="/signup" method="POST">
+        {% csrf_token %}
+            <label for="">Usuario</label>
+            <input type="text" id ="username" name="username" placeholder="Genere su usuario" Required>
+            <br>
+            <br>
+
+            <label for="">Nombre</label>
+            <input type="text" id ="fname" name="fname" placeholder="Ingrese su nombre" Required>
+            <br>
+            <br>
+
+            <label for="">Apellido</label>
+            <input type="text" id ="lname" name="lname" placeholder="Ingrese su apellido" Required>
+            <br>
+            <br>
+
+            <label for="">Direccion de E-mail</label>
+            <input type="email" id ="email" name="email" placeholder="Ingrese su dirección de E-mail" Required>
+            <br>
+            <br>
+
+            <label for="">Contraeña</label>
+            <input type="contraseña" id ="pass1" name="pass1" placeholder="Ingrese su contraseña" Required>
+            <br>
+            <br>
+
+            <label for="">Repita su contraseña</label>
+            <input type="contraseña" id ="pass2" name="pass2" placeholder="Confirme la contraseña" Required>
+            <br>
+            <br>
+
+            <button type="submit">Confirmar</button>
+
+
+        </form>
+  </body>
+
+</html>
+
+{% endblock %}

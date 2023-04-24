@@ -1,0 +1,18 @@
+{% extends "paginas/base.html" %}
+
+{% block titulo %} Solicitar nuevo mapa {% endblock %}
+
+{% block Contenido %} 
+
+<div class="card">
+    <div class="card-header">
+        Realizar nuevo pedido de mapa
+    </div>
+    <div class="card-body">
+        <h4 class="card-title">Descripción del mapa</h4>
+        {% include 'mapas/form.html' %}       
+   
+    </div>
+</div>
+
+{% endblock %}
