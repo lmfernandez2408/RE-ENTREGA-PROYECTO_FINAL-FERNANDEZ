@@ -1,7 +1,8 @@
 # RE-ENTREGA-PROYECTO_FINAL-FERNANDEZ
 Re entrega del proyecto final de python
 Estimados profesores, un placer saludarlos,
-https://github.com/lmfernandez2408/RE-ENTREGA-PROYECTO_FINAL-FERNANDEZ.git
+
+VIDEO: https://www.youtube.com/watch?v=ab0L8op6Kp4
 
 # Proyecto Final de Lucía Margarita Fernández    
 Este proyecto es desarrollado en Python utilizando el framework Django. 
