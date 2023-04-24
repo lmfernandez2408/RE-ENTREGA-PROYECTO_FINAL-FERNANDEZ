@@ -3,6 +3,7 @@ Re entrega del proyecto final de python
 Estimados profesores, un placer saludarlos,
 
 VIDEO: https://www.youtube.com/watch?v=ab0L8op6Kp4
+VIDEO ADMIN: https://youtu.be/uCgBVV5KQMk
 
 # Proyecto Final de Lucía Margarita Fernández    
 Este proyecto es desarrollado en Python utilizando el framework Django. 
